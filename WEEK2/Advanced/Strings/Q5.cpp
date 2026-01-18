@@ -1,26 +1,20 @@
 // Strings
 // Question 5: String Compression
-
 #include <iostream>
 using namespace std;
 
 int main() {
-    string text;
-    cout << "Enter any text: ";
-    getline(cin, text);
+    string str;
+    getline(cin, str);
 
-    string compressed = "";
-
-    for(int i = 0; i < text.length(); i++) {
+    for(int i=0;i<str.length();i++){
         int count = 1;
-        while(i + 1 < text.length() && text[i] == text[i + 1]) {
+        while(i+1 < str.length() && str[i] == str[i+1]){
             count++;
             i++;
         }
-        compressed += text[i];
-        compressed += to_string(count);
+        cout << str[i] << count;
     }
-
-    cout << "Compressed string: " << compressed << endl;
+    cout << endl;
     return 0;
 }

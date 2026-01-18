@@ -1,25 +1,21 @@
 // Strings
 // Question 3: Anagram Checker
-
-
 #include <iostream>
 #include <algorithm>
 using namespace std;
 
 int main() {
-    string first, second;
-    cout << "Enter the first word: ";
-    getline(cin, first);
-    cout << "Enter the second word: ";
-    getline(cin, second);
+    string str1, str2;
+    cout << "Enter the first string: ";
+    getline(cin, str1);
+    cout << "Enter the second string: ";
+    getline(cin, str2);
 
-    sort(first.begin(), first.end());
-    sort(second.begin(), second.end());
+    sort(str1.begin(), str1.end());
+    sort(str2.begin(), str2.end());
 
-    if(first == second)
-        cout << "The words are anagrams." << endl;
-    else
-        cout << "The words are not anagrams." << endl;
+    if(str1 == str2) cout << "Strings are anagrams." << endl;
+    else cout << "Strings are not anagrams." << endl;
 
     return 0;
 }

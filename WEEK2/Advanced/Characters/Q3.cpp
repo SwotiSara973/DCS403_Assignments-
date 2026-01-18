@@ -1,21 +1,17 @@
 // Characters
 // Question 3: Remove All Non-Alphabetic Characters
-
-
 #include <iostream>
 using namespace std;
 
 int main() {
-    string input, lettersOnly;
-    cout << "Enter any text: ";
-    getline(cin, input);
+    string str;
+    getline(cin, str);
+    string result = "";
 
-    for(int i = 0; i < input.length(); i++) {
-        if((input[i] >= 'A' && input[i] <= 'Z') || (input[i] >= 'a' && input[i] <= 'z')) {
-            lettersOnly += input[i];
-        }
+    for(int i=0;i<str.length();i++){
+        if(isalpha(str[i])) result += str[i];
     }
 
-    cout << "Text with only letters: " << lettersOnly << endl;
+    cout << result << endl;
     return 0;
 }
