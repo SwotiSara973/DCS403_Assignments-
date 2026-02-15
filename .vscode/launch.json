@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tandu/OneDrive/Desktop/403DCS_Assignment",
-      "program": "c:/Users/tandu/OneDrive/Desktop/403DCS_Assignment/build/Debug/outDebug",
+      "cwd": "c:/Users/tandu/OneDrive/Desktop/403DCS_Assignment/WEEK2",
+      "program": "c:/Users/tandu/OneDrive/Desktop/403DCS_Assignment/WEEK2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
